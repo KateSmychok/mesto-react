@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7028e77-8b93-4b03-9be2-55e625d07b84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/contexts/CurrentUserContext.js" afterDir="false" />
+    <list default="true" id="f7028e77-8b93-4b03-9be2-55e625d07b84" name="Default Changelist" comment="CurrentUserContext">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,8 +81,16 @@
       <workItem from="1616053010875" duration="23000" />
       <workItem from="1616053035149" duration="42055000" />
       <workItem from="1616502077155" duration="12000" />
-      <workItem from="1617179016149" duration="4991000" />
+      <workItem from="1617179016149" duration="14981000" />
     </task>
+    <task id="LOCAL-00001" summary="CurrentUserContext">
+      <created>1617460548641</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617460548641</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +99,24 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/Designer1/dev/mesto-react/src" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -113,6 +124,15 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CurrentUserContext" />
+    <option name="LAST_COMMIT_MESSAGE" value="CurrentUserContext" />
   </component>
   <component name="WindowStateProjectService">
     <state x="631" y="377" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616076565725">
@@ -123,22 +143,22 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="916" y="431" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1616502087181" />
-    <state width="1595" height="267" key="GridCell.Tab.0.bottom" timestamp="1617179948517">
+    <state width="1595" height="267" key="GridCell.Tab.0.bottom" timestamp="1617466684054">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="1595" height="267" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1617179948517" />
-    <state width="1595" height="267" key="GridCell.Tab.0.center" timestamp="1617179948517">
+    <state width="1595" height="267" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1617466684054" />
+    <state width="1595" height="267" key="GridCell.Tab.0.center" timestamp="1617466684054">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="1595" height="267" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1617179948517" />
-    <state width="1595" height="267" key="GridCell.Tab.0.left" timestamp="1617179948517">
+    <state width="1595" height="267" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1617466684054" />
+    <state width="1595" height="267" key="GridCell.Tab.0.left" timestamp="1617466684054">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="1595" height="267" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1617179948517" />
-    <state width="1595" height="267" key="GridCell.Tab.0.right" timestamp="1617179948517">
+    <state width="1595" height="267" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1617466684054" />
+    <state width="1595" height="267" key="GridCell.Tab.0.right" timestamp="1617466684054">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="1595" height="267" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1617179948517" />
+    <state width="1595" height="267" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1617466684054" />
     <state x="550" y="185" key="SettingsEditor" timestamp="1616152443554">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

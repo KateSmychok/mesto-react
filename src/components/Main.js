@@ -7,19 +7,34 @@ function Main(props) {
   const user = React.useContext(CurrentUserContext);
   const [cards, setCards] = React.useState([]);
 
-
   React.useEffect(() => {
     api.getInitialCards()
       .then((data) => {
         setCards(data);
+        console.log(data)
       })
       .catch((err) => {
         console.log(err);
       })
   }, [])
 
+  function handleCardLike(card) {
+    const isLiked = card.likes.some(i => i._id === user._id);
+    api.likeCard(card._id, isLiked)
+      .then((newCard) => {
+        setCards((state) => state.map((c) => c._id === card._id ? newCard : c));
+      });
+  }
+
+  function handleCardDelete(card) {
+    api.deleteCard(card._id)
+      .then(() => {
+        setCards((state) => state.filter(c => c._id !== card._id))
+      })
+  }
+
   const initialCards = cards.map((card) => {
-      return <Card cardData={card} onCardClick={props.onCardClick} key={card._id}/>
+      return <Card cardData={card} key={card._id} onCardClick={props.onCardClick} onCardLike={handleCardLike} onCardDelete={handleCardDelete}/>
   })
 
   return (
