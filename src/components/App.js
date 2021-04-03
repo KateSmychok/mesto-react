@@ -4,6 +4,7 @@ import Main from './Main';
 import Footer from './Footer';
 import PopupWithForm from './PopupWithForm';
 import ImagePopup from './ImagePopup';
+import EditProfilePopup from './EditProfilePopup';
 import api from '../utils/api.js';
 import CurrentUserContext from '../contexts/CurrentUserContext';
 
@@ -42,6 +43,17 @@ function App() {
     setIsImagePopupOpened(true);
   }
 
+  function handleUpdateUser({name, about}) {
+    api.setUserInfo(name, about)
+      .then((data) => {
+        setCurrentUser(data);
+        closeAllPopups();
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+  }
+
   function closeAllPopups() {
     setIsEditProfilePopupOpened(false);
     setIsAddPlacePopupOpened(false);
@@ -61,35 +73,7 @@ function App() {
         <Footer/>
 
         //Редактировать профиль
-        <PopupWithForm
-          title="Редактировать профиль"
-          name="profile"
-          submitButtonText="Сохранить"
-          isOpened={isEditProfilePopupOpened}
-          onClose={closeAllPopups}>
-          <input
-            id="name"
-            autoComplete="off"
-            type="text"
-            name="name"
-            className="popup__input popup__input_type_name"
-            placeholder="Имя"
-            minLength="2"
-            maxLength="40"
-            required/>
-          <span className="popup__error" id="name-error"> </span>
-          <input
-            id="job"
-            autoComplete="off"
-            type="text"
-            name="job"
-            className="popup__input popup__input_type_job"
-            placeholder="Вид деятельности"
-            minLength="2"
-            maxLength="200"
-            required/>
-          <span className="popup__error" id="job-error"> </span>
-        </PopupWithForm>
+        <EditProfilePopup isOpened={isEditProfilePopupOpened} onClose={closeAllPopups} onUpdateUser={handleUpdateUser} />
 
         //Новое место
         <PopupWithForm
