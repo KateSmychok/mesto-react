@@ -6,7 +6,7 @@ function EditAvatarPopup(props) {
   const inputRef = React.useRef();
 
   function handleAvatarChange(e) {
-    setAvatar(e.target.value)
+    setAvatar(e.target.value);
   }
 
   function handleSubmit(e) {

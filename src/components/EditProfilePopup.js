@@ -13,10 +13,10 @@ function EditProfilePopup(props) {
   }, [user]);
 
   function handleNameChange(e) {
-    setName(e.target.value)
+    setName(e.target.value);
   }
   function handleDescriptionChange(e) {
-    setDescription(e.target.value)
+    setDescription(e.target.value);
   }
 
   function handleSubmit(e) {
@@ -36,7 +36,7 @@ function EditProfilePopup(props) {
       onClose={props.onClose}
       onSubmit={handleSubmit}>
       <input
-        value={name || ""}
+        value={name || ''}
         onChange={handleNameChange}
         id="name"
         autoComplete="off"
@@ -49,7 +49,7 @@ function EditProfilePopup(props) {
         required/>
       <span className="popup__error" id="name-error"> </span>
       <input
-        value={description || ""}
+        value={description || ''}
         onChange={handleDescriptionChange}
         id="job"
         autoComplete="off"

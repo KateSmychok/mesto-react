@@ -5,12 +5,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7028e77-8b93-4b03-9be2-55e625d07b84" name="Default Changelist" comment="refactoring: EditPopupProfile">
-      <change afterPath="$PROJECT_DIR$/src/components/EditAvatarPopup.js" afterDir="false" />
+    <list default="true" id="f7028e77-8b93-4b03-9be2-55e625d07b84" name="Default Changelist" comment="refactoring: EditAvatarPopup">
+      <change afterPath="$PROJECT_DIR$/src/components/AddPlacePopup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EditAvatarPopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditAvatarPopup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/EditProfilePopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditProfilePopup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +85,7 @@
       <workItem from="1616053010875" duration="23000" />
       <workItem from="1616053035149" duration="42055000" />
       <workItem from="1616502077155" duration="12000" />
-      <workItem from="1617179016149" duration="35028000" />
+      <workItem from="1617179016149" duration="40182000" />
     </task>
     <task id="LOCAL-00001" summary="CurrentUserContext">
       <created>1617460548641</created>
@@ -106,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617479074944</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactoring: EditAvatarPopup">
+      <created>1617492737805</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617492737805</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +154,8 @@
     <MESSAGE value="CurrentUserContext" />
     <MESSAGE value="new features: like and delete card" />
     <MESSAGE value="refactoring: EditPopupProfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring: EditPopupProfile" />
+    <MESSAGE value="refactoring: EditAvatarPopup" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring: EditAvatarPopup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="631" y="377" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616076565725">
