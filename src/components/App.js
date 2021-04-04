@@ -35,12 +35,18 @@ function App() {
       .then((newCard) => {
         setCards((state) => state.map((c) => c._id === card._id ? newCard : c))
       })
+      .catch((err) => {
+        console.log(err);
+      })
   }
 
   function handleCardDelete(card) {
     api.deleteCard(card._id)
       .then(() => {
         setCards((state) => state.filter(c => c._id !== card._id))
+      })
+      .catch((err) => {
+        console.log(err);
       })
   }
 
@@ -75,12 +81,10 @@ function App() {
     api.setUserInfo(name, about)
       .then((data) => {
         setCurrentUser(data);
+        closeAllPopups();
       })
       .catch((err) => {
         console.log(err);
-      })
-      .finally(() => {
-        closeAllPopups();
       })
   }
 
@@ -88,12 +92,10 @@ function App() {
     api.setAvatar(avatar)
       .then((data) => {
         setCurrentUser(data);
+        closeAllPopups();
       })
       .catch((err) => {
         console.log(err);
-      })
-      .finally(() => {
-        closeAllPopups();
       })
   }
 
@@ -101,12 +103,10 @@ function App() {
     api.postNewCard(name, link)
       .then((newCard) => {
         setCards([newCard, ...cards]);
+        closeAllPopups();
       })
       .catch((err) => {
         console.log(err);
-      })
-      .finally(() => {
-        closeAllPopups();
       })
   }
 
@@ -131,13 +131,13 @@ function App() {
           onCardDelete={handleCardDelete}/>
         <Footer/>
 
-        //Редактировать профиль
+        {/*Редактировать профиль*/}
         <EditProfilePopup isOpened={isEditProfilePopupOpened} onClose={closeAllPopups} onUpdateUser={handleUpdateUser} />
 
-        //Обновить аватар
+        {/*Обновить аватар*/}
         <EditAvatarPopup isOpened={isEditAvatarPopupOpened} onClose={closeAllPopups} onUpdateAvatar={handleUpdateAvatar} />
 
-        //Добавить карточку
+        {/*Добавить карточку*/}
         <AddPlacePopup isOpened={isAddPlacePopupOpened} onClose={closeAllPopups} onAddPlace={handleAddPlaceSubmit} />
 
         <ImagePopup
@@ -146,7 +146,7 @@ function App() {
           onClose={closeAllPopups}>
         </ImagePopup>
 
-        //Вы уверены?(пока не работает)
+        {/*Вы уверены?*/}
         <PopupWithForm
           title="Вы уверены?"
           name="confirm"
